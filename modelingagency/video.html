@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Areana Of Valor</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap stylesheet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- Custom stylesheet -->
+	<link rel="stylesheet" href="style.css">
+    <style>
+		.video-thumbnail {
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Navigation bar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Areana Of Valor</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="video.html">Videos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#upload">Upload</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="eroticshop.html">Erotica Shop</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="modelprofiles.html">View Models</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="signupmembers.html">Careers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="events.html">Events</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="sign-inpage.html">Sign In</a>
+				</li>
+			</ul>
+			
+		</div>
+	</nav>
+
+	<!-- Header section -->
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1>Welcome to Areana Of Valor</h1>
+			<p>Discover the best models from around the world.</p>
+			<a href="signupmembers.html" class="btn btn-primary btn-lg">Sign Up Now</a>
+		</div>
+	</div>
+    <!--video section-->
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Video Section</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="video-card">
+              <div class="video-wrapper">
+                <video src="video1.mp4" controls></video>
+              </div>
+              <div class="video-description">
+                <h4>Video Title 1</h4>
+                <p>Video description lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="video-card">
+              <div class="video-wrapper">
+                <video src="video2.mp4" controls></video>
+              </div>
+              <div class="video-description">
+                <h4>Video Title 2</h4>
+                <p>Video description lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="video-card">
+              <div class="video-wrapper">
+                <video src="video3.mp4" controls></video>
+              </div>
+              <div class="video-description">
+                <h4>Video Title 3</h4>
+                <p>Video description lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        // Script to auto-pause other videos when a new video is played
+        const videos = document.querySelectorAll("video");
+        videos.forEach(video => {
+          video.addEventListener("play", () => {
+            videos.forEach(vid => {
+              if (vid != video) {
+                vid.pause();
+              }
+            });
+          });
+        });
+      </script>
+      
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<!-- Navigation bar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Areana Of Valor</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="video.html">Videos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#upload">Upload</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="eroticshop.html">Erotica Shop</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="modelprofiles.html">View Models</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="signupmembers.html">Careers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="events.html">Events</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="sign-inpage.html">Sign In</a>
+				</li>
+			</ul>
+			
+		</div>
+	</nav>
+
+	
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<h1 class="text-center mb-4">Sign Up</h1>
+				<form method="POST" action="process_signup.php">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name" name="name" required>
+					</div>
+					<div class="form-group">
+						<label for="age">Age</label>
+						<input type="number" class="form-control" id="age" name="age" required>
+					</div>
+					<div class="form-group">
+						<label for="gender">Gender</label>
+						<select class="form-control" id="gender" name="gender" required>
+							<option value="">--Select Gender--</option>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="dob">Date of Birth</label>
+						<input type="date" class="form-control" id="dob" name="dob" required>
+					</div>
+					<div class="form-group">
+						<label for="subscription">Subscription</label>
+						<select class="form-control" id="subscription" name="subscription" required>
+							<option value="">--Select Subscription--</option>
+							<option value="Standard">Standard (£9.99 per month)</option>
+							<option value="Platinum VIP">Platinum VIP (£29.99 per month)</option>
+						</select>
+					</div>
+					<!--<div class="form-group">
+						<label for="card">Card Details</label>
+						<input type="text" class="form-control" id="card" name="card" required>
+					</div>-->
+					<button type="submit" class="btn btn-primary btn-block">Submit</button>
+				</form>
+                
+                
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sEWU0MvwxI2jG" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
